@@ -1,1 +1,1 @@
-# Interpolation_lib
+# Simple to use interpolation library
