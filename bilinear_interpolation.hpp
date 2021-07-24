@@ -16,7 +16,6 @@ double linear_interp (double x1, double y1, double x2, double y2, double x)
 
 double bil_interp(std::set<double> setx, std::set<double> sety, std::vector<double>  fvec, double x, double y )
 {
-	//first remove unique elements in a vector: //https://stackoverflow.com/questions/1041620/whats-the-most-efficient-way-to-erase-duplicates-and-sort-a-vector
 	int size_y   = sety.size();
 	int size_x   = setx.size();
 
