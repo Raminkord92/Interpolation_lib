@@ -16,10 +16,10 @@ int main()
 	vector<double> fvec;
 
 
-	for( double x = 2; x < 5; x++)
+	for( double x = 2; x < 15; x++)
 	{
 				
-		for( double y = 2; y < 5; y++)
+		for( double y = 2; y < 15; y++)
 		{
 			double z = x * x + y * y;
 			setx.insert(x);
@@ -27,12 +27,13 @@ int main()
 			fvec.push_back(z);
 		}
 	}
+	bi_interp f1 = bi_interp(setx, sety, fvec);
 
-	for (double x = 2; x < 5; x++)
+	for (double x = 2; x < 10; x++)
 	{
-		for (double y = 2; y < 5; y++)
+		for (double y = 2; y < 10; y++)
 		{
-			cout << x << " " << y << " " << bil_interp(setx, sety, fvec, x, y) << endl;
+			cout << x << " " << y << " " << f1.interp(x, y) << endl;
 		}
 	}
 
